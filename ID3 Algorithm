@@ -119,3 +119,80 @@ for xtest in testdata:
     print("The test instance:",xtest)
     print("The label for test instance:")
     classify(node1,xtest,features)
+
+OUTPUT:
+The decision tree for the dataset using ID3 algorithm is
+ Color
+   YELLOW
+     Size
+       SMALL
+         T
+       LARGE
+         Act
+           STRETCH
+             Age
+               ADULT
+                 T
+               CHILD
+                 F
+           DIP
+             F
+   PURPLE
+     Act
+       STRETCH
+         Age
+           ADULT
+             T
+           CHILD
+             F
+       DIP
+         F
+The test instance: ['YELLOW', 'SMALL', 'STRETCH', 'ADULT', 'T']
+The label for test instance:
+T
+The test instance: ['YELLOW', 'SMALL', 'STRETCH', 'CHILD', 'T']
+The label for test instance:
+T
+The test instance: ['YELLOW', 'SMALL', 'DIP', 'ADULT', 'T']
+The label for test instance:
+T
+The test instance: ['YELLOW', 'SMALL', 'DIP', 'CHILD', 'T']
+The label for test instance:
+T
+The test instance: ['YELLOW', 'LARGE', 'STRETCH', 'ADULT', 'T']
+The label for test instance:
+T
+The test instance: ['YELLOW', 'LARGE', 'STRETCH', 'CHILD', 'F']
+The label for test instance:
+F
+The test instance: ['YELLOW', 'LARGE', 'DIP', 'ADULT', 'F']
+The label for test instance:
+F
+The test instance: ['YELLOW', 'LARGE', 'DIP', 'CHILD', 'F']
+The label for test instance:
+F
+The test instance: ['PURPLE', 'SMALL', 'STRETCH', 'ADULT', 'T']
+The label for test instance:
+T
+The test instance: ['PURPLE', 'SMALL', 'STRETCH', 'CHILD', 'F']
+The label for test instance:
+F
+The test instance: ['PURPLE', 'SMALL', 'DIP', 'ADULT', 'F']
+The label for test instance:
+F
+The test instance: ['PURPLE', 'SMALL', 'DIP', 'CHILD', 'F']
+The label for test instance:
+F
+The test instance: ['PURPLE', 'LARGE', 'STRETCH', 'ADULT', 'T']
+The label for test instance:
+T
+The test instance: ['PURPLE', 'LARGE', 'STRETCH', 'CHILD', 'F']
+The label for test instance:
+F
+The test instance: ['PURPLE', 'LARGE', 'DIP', 'ADULT', 'F']
+The label for test instance:
+F
+The test instance: ['PURPLE', 'LARGE', 'DIP', 'CHILD', 'F']
+The label for test instance:
+F
+
